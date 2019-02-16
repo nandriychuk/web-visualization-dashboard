@@ -18,13 +18,7 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button> -->
-      <a class="navbar-brand">Latitude</a>
+      <a class="navbar-brand" id="logo" href="./index.html">Latitude</a>
   </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -35,49 +29,62 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Max Temp</a></li>
-            <li><a href="#">Humidity</a></li>
-            <li><a href="#">Cloudness</a></li>
-            <li><a href="#">Wind Speed</a></li>
+            <li><a href="./max_temp.html">Max Temp</a></li>
+            <li><a href="./humidity.html">Humidity</a></li>
+            <li><a href="./cloudness.html">Cloudness</a></li>
+            <li><a href="./wind_speed.html">Wind Speed</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Comparison</a></li>
-            <li><a href="#">Data</a></li>
+            <li><a href="./comparisons.html">Comparison</a></li>
+            <li><a href="./data.html">Data</a></li>
           </ul>
         </li>
-        <li><a href="#">Comparison</a></li>
-        <li><a href="#">Data</a></li>
+        <li><a href="./comparisons.html">Comparison</a></li>
+        <li><a href="./data.html">Data</a></li>
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    </div>
+  </div>
 </nav>
 
 <!-- #----------------------------------------------------------------------------------------  -->
 <div class="container">
+<div class="container-comparison">
+       <div class="row">
         <div class="col-xs-12 col-md-12">
-            <div class="panel panel-default right">
-                <div class="panel-body">
-                    <h1> This is a header </h1>
+            <div class="panel panel-default comparison">
+                <div class="panel-body comparison">
+                    <h1 class="comparison"><b> Comparison: Latitude vs X </b></h1><br>
+                    <h3>Click any plot to get an in-dept analysis.</h3>
                     <br>
-                    <h3> This is a header </h3>
-                    <a href="www.google.com">
-                        <img src="https://raw.githubusercontent.com/nandriychuk/python-APIs/master/images/CityLatitudeVSMaxTemperature.png" alt="Fig2">
+                    <div class="comparison-item">
+                    <h3 class="comparison"> vs. Max Temperataure </h3>
+                    <a href="./max_temp.html">
+                        <img class = "comparison-image" src="https://raw.githubusercontent.com/nandriychuk/python-APIs/master/images/CityLatitudeVSMaxTemperature.png" alt="Fig2">
                     </a>
-                    <h3> This is a header </h3>
-                    <a href="www.google.com">
-                        <img  src="https://raw.githubusercontent.com/nandriychuk/python-APIs/master/images/CityLatitudeVSHumidity.png" alt="Fig2">
+                    </div>
+                    <div class="comparison-item">
+                    <h3 class="comparison"> vs. Humidity </h3>
+                    <a href="./humidity.html">
+                        <img class = "comparison-image" src="https://raw.githubusercontent.com/nandriychuk/python-APIs/master/images/CityLatitudeVSHumidity.png" alt="Fig2">
                     </a>
-                    <h3> This is a header </h3>
-                    <a href="www.google.com">
-                        <img src="https://raw.githubusercontent.com/nandriychuk/python-APIs/master/images/CityLatitudeVSCloudness.png" alt="Fig2">
+                    </div>
+                    <div class="comparison-item">
+                    <h3 class="comparison"> vs. Cloudness </h3>
+                    <a href="./cloudness.html">
+                        <img class = "comparison-image" src="https://raw.githubusercontent.com/nandriychuk/python-APIs/master/images/CityLatitudeVSCloudness.png" alt="Fig2">
                     </a>
-                    <h3> This is a header </h3>
-                    <a href="www.google.com">
-                      <img  src="https://raw.githubusercontent.com/nandriychuk/python-APIs/master/images/CityLatitudeVSWindSpeed.png" alt="Fig2">
+                    </div>
+                    <div class="comparison-item">
+                    <h3 class="comparison"> vs. Wind Speed </h3>
+                    <a href="./wind_speed.html">
+                      <img class = "comparison-image" src="https://raw.githubusercontent.com/nandriychuk/python-APIs/master/images/CityLatitudeVSWindSpeed.png" alt="Fig2">
                     </a>
+                    </div>
                 </div>
             </div>
        </div>
+    </div>
   </div>
+</div>
 </div>
 
 

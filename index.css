@@ -1,57 +1,105 @@
 body{
     background-color: rgb(219, 233, 232);
 }
+.comparison-item {
+    display:inline-block;
+}
 h1{
     margin: 0px;
+    color: rgb(27, 92, 92);
 }
-.container{
-    display: inline-block;
+h3{
+    color: rgb(27, 92, 92);
 }
-img{
+th{
+    text-align: center;
+}
+.container {
+    margin: 50px auto;
+    display: block;
+}
+.landing-image.left{
     float: left;
-    display: inline-block;
 }
 .landing-image{
-    max-height: 35%;
+    max-height: 55%;
     max-width: 45%;
 }
-.panel.panel-default .panel-heading {
-    color: rgb(46, 107, 102);
+.analysis-image.right{
+    max-height: 55%;
+    max-width: 45%;
 }
-
+/* .analysis-image.left{
+    max-height: 85em;
+    max-width: 74em;
+} */
+.panel-body.analysis.left {
+    text-align: center;
+}
+.panel-heading.data-table{
+    font-size: 2em;
+    color:  rgb(27, 92, 92);
+    background-color: rgb(255, 255, 255);
+}
+.panel-heading.data-table p{
+    font-size: 18px;
+    margin-top: 20px;
+}
 .panel.panel-default{
     border: 1px dotted gray;
 }
+.panel.panel-default.comparison{
+    border: 1px dotted gray;
+}
 .panel.panel-default.right{
-    /* position: absolute;
-    left: 25%; */
-    /* margin-right: 70px;*/ 
-    margin-top: 50px;
-    /* margin-left: 50px; */ 
     box-shadow: 5px 8px #dddcdc;
     width:100%;    
+    text-align: center;
 }
 .panel.panel-default.left{
-    /* position: absolute;
-    left: 10%; */
-    margin-right: 0px;
-    margin-left: 50px;  
-    margin-top: 50px;
     box-shadow: 5px 8px #dddcdc;
-
+}
+.panel.panel-default.comparison{
+    margin: 50px auto;
+    display: block;
+}
+.panel-body.comparison{
+    text-align: center;
 }
 .navbar-header .navbar-brand{
-    
     color: rgba(45, 61, 60, 0.562);
     font-weight: bold;
 }
-    
-/* .navbar-default{
-   
-} */
 .container-fluid .navbar-header{
     margin-left: 150px;
 }
+/* .mini-item{
+    display: inline-block;
+} */
 #logo:hover{
     background-color: rgb(27, 92, 92);
 }
+#logo{
+    background-color: rgb(29, 110, 110);
+    color: white;
+    font-size: 2em;
+}
+.comparison-item:hover{
+    border: 1px solid rgb(29, 110, 110);
+}
+a:not(.analysis-image.right):hover{
+    border: 1px solid rgb(29, 110, 110);
+}
+.landing-image.right:hover{
+    border: 1px solid rgb(29, 110, 110);
+}
+
+@media (max-width: 810px) {
+    .analysis-image.right{
+        max-height: 25%;
+        max-width: 20%;
+    }
+    .landing-image.right{
+        max-height: 25%;
+        max-width: 20%;
+    }
