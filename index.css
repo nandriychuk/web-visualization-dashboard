@@ -14,6 +14,9 @@ h3{
 th{
     text-align: center;
 }
+p{
+    font-size: 18px;
+}
 .container {
     margin: 50px auto;
     display: block;
@@ -29,10 +32,6 @@ th{
     max-height: 55%;
     max-width: 45%;
 }
-/* .analysis-image.left{
-    max-height: 85em;
-    max-width: 74em;
-} */
 .panel-body.analysis.left {
     text-align: center;
 }
@@ -73,9 +72,6 @@ th{
 .container-fluid .navbar-header{
     margin-left: 150px;
 }
-/* .mini-item{
-    display: inline-block;
-} */
 #logo:hover{
     background-color: rgb(27, 92, 92);
 }
@@ -87,14 +83,16 @@ th{
 .comparison-item:hover{
     border: 1px solid rgb(29, 110, 110);
 }
-a:not(.analysis-image.right):hover{
+.analysis-image.right:hover{
     border: 1px solid rgb(29, 110, 110);
 }
 .landing-image.right:hover{
     border: 1px solid rgb(29, 110, 110);
 }
-
-@media (max-width: 810px) {
+a:hover {
+    text-decoration: none;
+}
+@media (max-width: 780px) {
     .analysis-image.right{
         max-height: 25%;
         max-width: 20%;
@@ -103,3 +101,13 @@ a:not(.analysis-image.right):hover{
         max-height: 25%;
         max-width: 20%;
     }
+    .container-fluid{
+        background-color: rgb(34, 132, 139);
+    }
+    .dropdown-toggle{
+        color: aliceblue;
+    }
+    .navbar-collapse.collapse.show{
+        background-color: rgb(241, 247, 244);
+    }
+}
